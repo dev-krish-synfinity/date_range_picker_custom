@@ -137,6 +137,7 @@ class DateRangePickerWidget extends StatefulWidget {
     this.quickDateRanges = const [],
     this.doubleMonth = true,
     this.height = 329,
+    this.width = 200,
     this.displayMonthsSeparator = true,
     this.separatorThickness = 1,
   }) : super(key: key);
@@ -170,6 +171,8 @@ class DateRangePickerWidget extends StatefulWidget {
 
   /// The height of the picker.
   final double height;
+
+  final double width;
 
   /// A list of dates that are disabled and cannot be selected.
   final List<DateTime> disabledDates;
@@ -275,7 +278,7 @@ class DateRangePickerWidgetState extends State<DateRangePickerWidget> {
         mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-            width: 200,
+            width: widget.width,
             child: QuickSelectorWidget(
               selectedDateRange: controller.dateRange,
               quickDateRanges: widget.quickDateRanges,
