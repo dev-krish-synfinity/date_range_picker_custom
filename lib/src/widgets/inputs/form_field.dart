@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:/flutter_date_range_picker.dart';
-import 'package:flutter_date_range_picker_custom/flutter_date_range_picker.dart';
-import 'package:flutter_date_range_picker_custom/src/widgets/typedefs.dart';
+import 'package:flutter_date_range_picker/flutter_date_range_picker.dart';
+import 'package:flutter_date_range_picker/src/widgets/typedefs.dart';
 
 /// A [FormField] that wraps a [DateRangeField] and integrates with a form.
 class DateRangeFormField extends FormField<DateRange> {

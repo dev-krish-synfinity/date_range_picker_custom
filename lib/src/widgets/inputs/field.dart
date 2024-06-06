@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_date_range_picker_custom/src/models.dart';
-import 'package:flutter_date_range_picker_custom/src/widgets/dialogs.dart';
-import 'package:flutter_date_range_picker_custom/src/widgets/typedefs.dart';
+import 'package:flutter_date_range_picker/src/models.dart';
+import 'package:flutter_date_range_picker/src/widgets/dialogs.dart';
+import 'package:flutter_date_range_picker/src/widgets/typedefs.dart';
 
 /// A [StatelessWidget] that provides a field to select a date range dateRange.
 class DateRangeField extends StatelessWidget {

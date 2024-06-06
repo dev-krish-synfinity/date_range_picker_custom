@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_date_range_picker_custom/flutter_date_range_picker.dart';
-import 'package:flutter_date_range_picker_custom/src/widgets/typedefs.dart';
+import 'package:flutter_date_range_picker/flutter_date_range_picker.dart';
+import 'package:flutter_date_range_picker/src/widgets/typedefs.dart';
 
 /// A function to show the dateRange picker dialog.
 ///
@@ -129,7 +129,7 @@ class _DateRangePickerDialogState extends State<DateRangePickerDialog> {
                   ),
                   child: widget.builder(context, (dateRange) {
                     setState(() {
-                      this.dateRange = dateRange;
+                      this.dateRange = dateRange as DateRange?;
                     });
                   }),
                 ),
